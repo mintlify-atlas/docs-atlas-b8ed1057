@@ -1,0 +1,109 @@
+{
+  "projectType": "saas",
+  "projectName": "SaludMap",
+  "projectDescription": "A healthcare mapping platform for finding medical facilities, booking appointments, and managing healthcare services with offline support.",
+  "theme": "palm",
+  "primaryColor": "#66b09d",
+  "lightColor": "#9EE2CF",
+  "darkColor": "#4daa90",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "features"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "user-guide/finding-facilities",
+              "user-guide/appointments",
+              "user-guide/reviews",
+              "user-guide/offline-mode",
+              "user-guide/authentication"
+            ]
+          },
+          {
+            "group": "Developer Guide",
+            "pages": [
+              "developer/setup",
+              "developer/frontend-architecture",
+              "developer/backend-architecture",
+              "developer/database-schema",
+              "developer/deployment"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/map-navigation",
+              "features/establishments",
+              "features/appointments",
+              "features/reviews",
+              "features/chatbot",
+              "features/insurance",
+              "features/emergency",
+              "features/analytics",
+              "features/internationalization"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/overview",
+              "api/authentication"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/establishments",
+              "api/appointments",
+              "api/reviews",
+              "api/specialties",
+              "api/users",
+              "api/places",
+              "api/chatbot"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Interactive map with healthcare facility locations",
+    "Appointment booking and management system",
+    "User reviews and ratings for establishments",
+    "Offline mode with tile precaching",
+    "Multi-language support (Spanish, English, French)",
+    "AI-powered chatbot with Gemini integration",
+    "Emergency services widget",
+    "Insurance information management",
+    "Analytics dashboard for establishments",
+    "JWT-based authentication"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login - User authentication",
+    "POST /api/auth/register - User registration",
+    "GET /api/establecimientos - List healthcare establishments",
+    "GET /api/establecimientos/:id - Get establishment details",
+    "POST /api/turnos - Create appointment",
+    "GET /api/turnos/usuario/:id - Get user appointments",
+    "POST /api/resenias - Create review",
+    "GET /api/resenias/establecimiento/:id - Get establishment reviews",
+    "GET /api/especialidades - List medical specialties",
+    "GET /api/places/nearby - Search nearby places",
+    "POST /api/chatbot/send-message - Chat with AI assistant"
+  ]
+}
